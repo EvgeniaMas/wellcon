@@ -752,7 +752,7 @@ textarea {
 }
 
 .sec1 {
-    background-image: url(../img/bg_sec1.jpg);
+    background-image: url(../img/bg_sec1old.jpg);
     
 
 }
@@ -4187,7 +4187,7 @@ max-height: 580px;
     font-size: 0;
     padding-top: 1px;
     z-index: 1;
-    background: rgba(0,0,0, 0.6) no-repeat bottom center;
+    background: rgba(0,0,0, 0.6) url(../img/bg_sec1dark.png) no-repeat bottom center;
     background-repeat: no-repeat;
     background-size: cover;
 }
