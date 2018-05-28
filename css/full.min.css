@@ -3006,7 +3006,7 @@ linear-gradient(to top, rgb(88, 122, 43) 0px, rgb(142, 191, 78) 100%);
 }
 
 .sec8 .ugol .ug_point .loop {
-    border: 5px solid #fca500;
+    border: 5px solid rgb(112, 154, 57);
     -webkit-box-shadow: 0 15px 45px rgba(0, 0, 0, .3);
     box-shadow: 0 15px 45px rgba(0, 0, 0, .3);
     width: 276px;
