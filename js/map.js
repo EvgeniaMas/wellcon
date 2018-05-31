@@ -1,14 +1,16 @@
 ymaps.ready(function(){
     var map = new ymaps.Map("custom_map", {
-            center: [55.81507878952877,38.98680249999998],
-            zoom: 7.5            
+            center: [55.58446640485473,37.385470500000004],
+            zoom: 7.85,
+             controls: []            
         });
     map.behaviors
         // Отключаем часть включенных по умолчанию поведений:
         //  - drag - перемещение карты при нажатой левой кнопки мыши;
         //  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
         .disable(['drag', 'rightMouseButtonMagnifier'])
-        .disable('scrollZoom');      
+        .disable('scrollZoom')
+        .disable('Zoom'); ;      
     // Изменяем свойство поведения с помощью опции:
     // изменение масштаба колесом прокрутки будет происходить медленно,
     // на 1/2 уровня масштабирования в секунду.
@@ -92,7 +94,7 @@ ymaps.ready(function(){
     );  
 
     var bulatnikovo = new ymaps.Placemark(
-        [55.560555522032516,37.62538349999993], {
+        [55.560376927309825,37.667159499999975], {
             // hintContent: 'Московская область, Ленинский район, деревня Жабкино, жилой квартал Булатниково',
         },
         {
@@ -103,7 +105,7 @@ ymaps.ready(function(){
     );
 
     var yasnoe = new ymaps.Placemark(
-        [56.49909359123222,36.92874], {
+        [55.61871707672188,37.381454499999926], {
             // hintContent: 'Московская область, городской округ Клин, СНТ Ясное'
         },
         {
@@ -138,13 +140,13 @@ ymaps.ready(function(){
 
  zhirovo.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
-       a.innerHTML= '<img class="map_picture" src="jobs/1.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, сельское поселение Вялковское, деревня Аксёново</p><p class="map_object__description"><b>Общая площадь:</b> 176,6 м2<br><b>Начало строительства:</b> 01.04.2018<br><b>Окончание строительства:</b> 12.06.2018</p>';        
+       a.innerHTML= '<img class="map_picture" src="jobs/1.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район,Новохаритоновское сельское поселение, дер. Жирово</p><p class="map_object__description"><b>Общая площадь:</b> 151 м2<br><b>Начало строительства:</b> 28.04.2018<br><b>Окончание строительства:</b> 12.07.2018</p>';        
      });
     
   
 sichi.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
-       a.innerHTML= '<img class="map_picture" src="jobs/2.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, сельское поселение Вялковское, деревня Аксёново</p><p class="map_object__description"><b>Общая площадь:</b> 176,6 м2<br><b>Начало строительства:</b> 01.04.2018<br><b>Окончание строительства:</b> 12.06.2018</p>';        
+       a.innerHTML= '<img class="map_picture" src="jobs/2.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, Шатурский район село Пышлицкое д. Сычи</p><p class="map_object__description"><b>Общая площадь:</b> 210 м2<br><b>Начало строительства:</b> 23.02.2018<br><b>Окончание строительства:</b> 23.03.2018</p>';        
      }); 
 
 aksenovo.events.add('mouseenter', function () {
@@ -153,36 +155,89 @@ aksenovo.events.add('mouseenter', function () {
      }); 
  zagornovo.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
-       a.innerHTML= '<img class="map_picture" src="jobs/4.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, сельское поселение Вялковское, деревня Аксёново</p><p class="map_object__description"><b>Общая площадь:</b> 176,6 м2<br><b>Начало строительства:</b> 01.04.2018<br><b>Окончание строительства:</b> 12.06.2018</p>';        
+       a.innerHTML= '<img class="map_picture" src="jobs/4.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, с. Загорново, ул.Советская</p><p class="map_object__description"><b>Общая площадь:</b> 129 м2<br><b>Начало строительства:</b> 12.07.2018<br><b>Окончание строительства:</b> 12.08.2018</p>';        
      });
 cholmi.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
-       a.innerHTML= '<img class="map_picture" src="jobs/5.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, сельское поселение Вялковское, деревня Аксёново</p><p class="map_object__description"><b>Общая площадь:</b> 176,6 м2<br><b>Начало строительства:</b> 01.04.2018<br><b>Окончание строительства:</b> 12.06.2018</p>';        
+       a.innerHTML= '<img class="map_picture" src="jobs/5.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, , район Солнечногорский, дер. Холмы</p><p class="map_object__description"><b>Общая площадь:</b> 220 м2<br><b>Начало строительства:</b> 24.04.2018<br><b>Окончание строительства:</b> 12.07.2018</p>';        
      }); 
 
 bulatnikovo.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
-       a.innerHTML= '<img class="map_picture" src="jobs/6.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, сельское поселение Вялковское, деревня Аксёново</p><p class="map_object__description"><b>Общая площадь:</b> 176,6 м2<br><b>Начало строительства:</b> 01.04.2018<br><b>Окончание строительства:</b> 12.06.2018</p>';        
+       a.innerHTML= '<img class="map_picture" src="jobs/6.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область Ленинградский район с/о Булатниково</p><p class="map_object__description"><b>Общая площадь:</b> 95,5 м2<br><b>Начало строительства:</b> 07.07.2018<br><b>Окончание строительства:</b> 28.07.2018</p>';        
      }); 
 
  chirikovo.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
-       a.innerHTML= '<img class="map_picture" src="jobs/7.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, сельское поселение Вялковское, деревня Аксёново</p><p class="map_object__description"><b>Общая площадь:</b> 176,6 м2<br><b>Начало строительства:</b> 01.04.2018<br><b>Окончание строительства:</b> 12.06.2018</p>';        
+       a.innerHTML= '<img class="map_picture" src="jobs/7.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, п.Краснопахорское,д.Чириково, ул.Лесная</p><p class="map_object__description"><b>Общая площадь:</b> 147 м2<br><b>Начало строительства:</b> 23.04.2018<br><b>Окончание строительства:</b> 23.06.2018</p>';        
      });   
   
 kochina_gora.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
-       a.innerHTML= '<img class="map_picture" src="jobs/8.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, сельское поселение Вялковское, деревня Аксёново</p><p class="map_object__description"><b>Общая площадь:</b> 176,6 м2<br><b>Начало строительства:</b> 01.04.2018<br><b>Окончание строительства:</b> 12.06.2018</p>';        
+       a.innerHTML= '<img class="map_picture" src="jobs/8.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, Тимонинский с/о, дер. Кочина Гора</p><p class="map_object__description"><b>Общая площадь:</b> 313,24 м2<br><b>Начало строительства:</b> 15.04.2018<br><b>Окончание строительства:</b> 25.06.2018</p>';        
      }); 
 
 yasnoe.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
-       a.innerHTML= '<img class="map_picture" src="jobs/9.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, сельское поселение Вялковское, деревня Аксёново</p><p class="map_object__description"><b>Общая площадь:</b> 176,6 м2<br><b>Начало строительства:</b> 01.04.2018<br><b>Окончание строительства:</b> 12.06.2018</p>';        
+       a.innerHTML= '<img class="map_picture" src="jobs/9.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">г. Москва, п.Московский тер.СНТ Ясное</p><p class="map_object__description"><b>Общая площадь:</b> 188,5 м2<br><b>Начало строительства:</b> 06.06.2017<br><b>Окончание строительства:</b> 10.08.2017</p>';        
      }); 
 yasnaya_polyna.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
-       a.innerHTML= '<img class="map_picture" src="jobs/5.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, сельское поселение Вялковское, деревня Аксёново</p><p class="map_object__description"><b>Общая площадь:</b> 176,6 м2<br><b>Начало строительства:</b> 01.04.2018<br><b>Окончание строительства:</b> 12.06.2018</p>';        
+       a.innerHTML= '<img class="map_picture" src="jobs/5.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, Сельское поселение Рыболовское, поселок Ясная Поляна</p><p class="map_object__description"><b>Общая площадь:</b> 162,5 м2<br><b>Начало строительства:</b> 05.10.2017<br><b>Окончание строительства:</b> 01.12.2017</p>';        
      }); 
+
+// ymaps.geoQuery(ymaps.regions.load("RU", {
+//     lang: "ru"
+// })).search('properties.hintContent = "Московская область"').setOptions('fillColor', 'rgba(0,0,0,0.1)').addToMap(map);
+
+
+
+// ymaps.geoQuery(ymaps.regions.load("RU", {
+//     lang: "ru"
+// })).search('properties.hintContent = "Москва"').setOptions('fillColor', 'rgba(0,0,0,0.1)').addToMap(map);
+
+
+// ymaps.geoQuery(ymaps.regions.load("RU", {
+//     lang: "ru"
+// })).search('properties.hintContent = "Москва"').setOptions('strokeColor', 'rgba(0,0,0,0.1)').addToMap(map);
+
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Владимирская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Тверская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Калужская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Ярославская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Тверская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Смоленская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Рязанская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Ивановская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Тульская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+
+
+ymaps.geoQuery(ymaps.regions.load("RU", {
+    lang: "ru"
+})).search('properties.hintContent = "Тульская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+
 
 
 });

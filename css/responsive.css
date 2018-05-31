@@ -1,0 +1,10 @@
+@media screen and (max-width:991px) {
+    #custom_map,
+    #map_content {
+        display: none;
+    }
+
+    #mobile_accordeon{
+        display: block;
+    }
+}
