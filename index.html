@@ -16,7 +16,7 @@
 	</head>
 <body>
 
-<!-- <div id="preloader">
+<div id="preloader">
    <div id="preload">
     <div id="roof">
             <img class="preload_logo part1" src="img/roof.png" alt="Логотип">
@@ -28,7 +28,7 @@
        <img class="preload_logo part5" src="img/bg_sec1.jpg" alt="Логотип"> 
       </div>      
    </div>      
-</div>   -->
+</div>  
  <div class="header mobi">
          <a class=menu_btn href=javascript:void(0)></a>
          <h2 class=logo_text>КОМПОЗИТ-СИТИ</h2>
@@ -2191,7 +2191,23 @@
             <div>Мы работаем <span class=workhours>ежедневно</span> <span class=url><span class=value-title title=http://www.romashka-cafe.ru></span></span></div>
          </div>
       </div>
-
+ <script>
+   var preloader = document.getElementById("preload");
+   var roof = document.getElementById("roof");
+   roof.classList.add("roof_down");
+   // roof.style.top = '33%';
+     function fadeOutnojquery(el){el.style.opacity = 1;
+       var interpreloader = setInterval(function(){
+      el.style.opacity = el.style.opacity - 0.05;
+      if (el.style.opacity <=0.05){ 
+        clearInterval(interpreloader);
+        preloader.style.display = "none";
+      }},15);
+      };
+      window.onload = function(){setTimeout(function(){fadeOutnojquery(preloader);
+      },2500); 
+      };
+  </script>  
 	
 		<!-- Scripts -->
 		<script src="js/jquery.min.js" ></script>		
