@@ -141,8 +141,7 @@ ymaps.ready(function(){
  zhirovo.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
        a.innerHTML= '<img class="map_picture" src="jobs/1.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район,Новохаритоновское сельское поселение, дер. Жирово</p><p class="map_object__description"><b>Общая площадь:</b> 151 м2<br><b>Начало строительства:</b> 28.04.2018<br><b>Окончание строительства:</b> 12.07.2018</p>';        
-     });
-    
+     });   
   
 sichi.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
@@ -183,60 +182,101 @@ yasnoe.events.add('mouseenter', function () {
      }); 
 yasnaya_polyna.events.add('mouseenter', function () {
        var a= document.getElementById('map_content');
+    
        a.innerHTML= '<img class="map_picture" src="jobs/5.jpg" alt="Работа компании Композит-Сити"><p class="map_object__title">Московская область, Раменский район, Сельское поселение Рыболовское, поселок Ясная Поляна</p><p class="map_object__description"><b>Общая площадь:</b> 162,5 м2<br><b>Начало строительства:</b> 05.10.2017<br><b>Окончание строительства:</b> 01.12.2017</p>';        
      }); 
 
-// ymaps.geoQuery(ymaps.regions.load("RU", {
-//     lang: "ru"
-// })).search('properties.hintContent = "Московская область"').setOptions('fillColor', 'rgba(0,0,0,0.1)').addToMap(map);
 
 
 
-// ymaps.geoQuery(ymaps.regions.load("RU", {
-//     lang: "ru"
-// })).search('properties.hintContent = "Москва"').setOptions('fillColor', 'rgba(0,0,0,0.1)').addToMap(map);
+yasnaya_polyna.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     }); 
+
+ zhirovo.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     });  
+  
+sichi.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     }); 
+
+aksenovo.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     }); 
+ zagornovo.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     }); 
+cholmi.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     }); 
+
+bulatnikovo.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     }); 
+
+ chirikovo.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     }); 
+  
+kochina_gora.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     }); 
+
+yasnoe.events.add('mouseleave', function () {
+       var a= document.getElementById('map_content');
+       a.innerHTML= 'Наведите на объект, чтобы узнать больше';        
+     }); 
 
 
-// ymaps.geoQuery(ymaps.regions.load("RU", {
-//     lang: "ru"
-// })).search('properties.hintContent = "Москва"').setOptions('strokeColor', 'rgba(0,0,0,0.1)').addToMap(map);
+
+
 
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Владимирская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Владимирская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Тверская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Тверская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Калужская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Калужская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Ярославская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Ярославская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Тверская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Тверская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Смоленская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Смоленская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Рязанская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Рязанская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Ивановская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Ивановская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Тульская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Тульская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 
 
 ymaps.geoQuery(ymaps.regions.load("RU", {
     lang: "ru"
-})).search('properties.hintContent = "Тульская область"').setOptions('fillColor', 'rgb(255, 255, 255)').setOptions('strokeWidth', 0).addToMap(map);
+})).search('properties.hintContent = "Тульская область"').setOptions('fillColor', '#dcdcdc').setOptions('strokeWidth', 0).addToMap(map);
 
 
 
