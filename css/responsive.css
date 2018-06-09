@@ -1,10 +1,18 @@
 @media screen and (max-width:991px) {
     #custom_map,
-    #map_content {
+    #map_content,
+    .logo_track,
+    .black_logo {
         display: none;
     }
 
-    #mobile_accordeon{
+    #mobile_accordeon
+    {
         display: block;
     }
+    .map_object__title,
+    .map_object__description {
+        color: #222;
+    }
+
 }
