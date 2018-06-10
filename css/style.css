@@ -1823,27 +1823,27 @@ linear-gradient(to top, rgb(88, 122, 43) 0px, rgb(142, 191, 78) 100%);
 }
 
 .sec4 .slid[data-sld='1'] {
-    background-image: url(../img/sec3_slid2.jpg)
+    background-image: url(../img/sec3_slid1.jpg)
 }
 
 .sec4 .slid[data-sld='2'] {
-    background-image: url(../img/sec3_slid3.jpg)
+    background-image: url(../img/sec3_slid2.jpg)
 }
 
 .sec4 .slid[data-sld='3'] {
-    background-image: url(../img/sec3_slid4.jpg)
+    background-image: url(../img/sec3_slid3.jpg)
 }
 
 .sec4 .slid[data-sld='4'] {
-    background-image: url(../img/sec3_slid5.jpg)
+    background-image: url(../img/sec3_slid4.jpg)
 }
 
 .sec4 .slid[data-sld='5'] {
-    background-image: url(../img/sec3_slid6.jpg)
+    background-image: url(../img/sec3_slid5.jpg)
 }
 
 .sec4 .slid[data-sld='6'] {
-    background-image: url(../img/sec3_slid1.jpg)
+    background-image: url(../img/sec3_slid6.jpg)
 }
 
 .sec4 .slid[data-sld='7'] {
@@ -2986,9 +2986,9 @@ linear-gradient(to top, rgb(88, 122, 43) 0px, rgb(142, 191, 78) 100%);
     vertical-align: top;
     margin-right: 240px;
     float: right;
-    position: relative;    
+    position: relative;   
 
-    border: 1px solid #73c444;
+    border: 3px solid #73c444;
    
     
 }
@@ -7503,9 +7503,7 @@ button#falseinput,
     text-align: left;
 }
 
-.houses {
-    max-width: 350px;
-}
+
 
 
 #extra_project {
@@ -7513,9 +7511,42 @@ button#falseinput,
     width: 530px;
     height: 60px;
     position: absolute;
-    top: 70%;
-    right: 15%;
+    top: 85%;
+    left: 0;
     z-index: 23;
+    text-decoration: none;
 }
 
 
+.grup.project_houses {
+    width: 48%;
+   
+
+}
+
+.houses {
+    display: inline-block;
+    max-width: 90%;
+    margin:auto;
+}
+
+.titl_p.house_type {
+    color: #fff;
+    background-color: rgb(112, 154, 57);
+    background-image: linear-gradient(to top, rgb(112, 154, 57) 0px, rgb(142, 191, 78) 100%);
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 4px 0 rgb(112, 154, 57), inset 0 -2px 0 rgba(255, 255, 255, .2);
+    box-shadow: 0 4px 0 rgb(112, 154, 57), inset 0 -2px 0 rgba(255, 255, 255, .2);
+    -webkit-transition: all .25s;
+   
+    width: 60%;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+   
+}
+
+a.komposite_link {
+text-decoration: none;
+}
