@@ -7511,8 +7511,8 @@ button#falseinput,
     width: 530px;
     height: 60px;
     position: absolute;
-    top: 85%;
-    left: 0;
+    top: 15%;
+    right: 0;
     z-index: 23;
     text-decoration: none;
 }
